@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/tobii.min.css" type="text/css" rel="stylesheet" />
+    <link
+      href="css/materialdesignicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- W3C -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Custom  Css -->
+    <link
+      href="css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      id="theme-opt"
+    />
+
+    <!-- Line -->
+    <meta
+      property="og:title"
+      content="AladinXPress : Comprehensive back-end and logistics management system"
+    />
+    <meta
+      property="og:description"
+      content="อะลาดิน ระบบจัดการหลังบ้านและขนส่งครบวงจร ตอบโจทย์ทุกร้านค้าบนโลกออนไลน์"
+    />
+    <meta
+      property="og:image"
+      content="https://sv1.picz.in.th/images/2023/03/27/mz7gtt.png"
+    />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Prompt&display=swap");
+
+    * {
+      font-family: "Prompt", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 5%,
+        rgba(236, 224, 173, 1) 100%
+      );
+      height: auto;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 700px) {
+      #div-mobile {
+        display: block;
+      }
+
+      #div-desktop {
+        display: none;
+      }
+      .navbarc5 {
+        background-color: #c50000;
+      }
+      .imgmobile {
+        width: 250px;
+        border-radius: 50%;
+        border: 10px solid #f0e09d;
+      }
+      .stylebuttonmobile:hover {
+        background: #e4c46c;
+      }
+      .stylebuttonmobile {
+        width: 200px;
+        padding: 1%;
+        font-size: 32px;
+        font-weight: bold;
+        background: #fdd978;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .imgqr {
+        width: 150px;
+      }
+      footer {
+        background-color: #c50000;
+
+        color: #fff;
+
+        text-align: center;
+      }
+      .p_info {
+        font-size: 16px;
+      }
+      .social_link:hover{
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 1px 7px;
+        border-radius: 4px;
+        transition: 200ms;
+       
+      }
+    }
+
+    @media screen and (min-width: 701px) and (max-width: 3000px) {
+      #div-mobile {
+        display: none;
+      }
+
+      #div-desktop {
+        display: block;
+      }
+
+      header {
+        background-color: #c50000;
+        height: 80px;
+        width: auto;
+      }
+
+      footer {
+        background-color: #c50000;
+        padding: 1.5rem 1.5rem;
+        width: auto;
+
+        text-align: center;
+      }
+
+      .content {
+        padding: 3% 3% 3% 3%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 1) 5%,
+          rgba(236, 224, 173, 1) 100%
+        );
+        height: auto;
+      }
+
+      .img {
+        width: 350px;
+        border-radius: 50%;
+        border: 12px solid #f0e09d;
+      }
+
+      .imgqr {
+        width: 150px;
+      }
+
+      .data {
+        width: 90%;
+        margin: auto;
+      }
+
+      .divimgqr {
+        text-align: center;
+      }
+
+      .infoprofile {
+        margin-top: 40px;
+      }
+
+      .p_info {
+        font-size: 25px;
+      }
+
+      .stylebutton {
+        width: 250px;
+        padding: 1%;
+
+        background: #fdd978;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      .stylebutton:hover {
+        background: #e4c46c;
+      }
+
+      .managewidth {
+        width: 300px;
+      }
+
+      .headname {
+        font-weight: bold;
+        font-size: 48px;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <div id="div-desktop">
+      <header>
+      <header>
+
+          <!-- START NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg nav-light">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="">
+                <span class="logo-light-mode">
+                    <img src="images/logo-light.png" class="l-light" alt="" width="180px">
+                  
+                </span>
+              
+            </a>
+
+       
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-unstyled social-icon foot-social-icon text-sm-end mb-0 " id="navbar-navlist">
+                    <li class="nav-item ">
+                        <a
+                        href="https://www.facebook.com/AladinXpress.official?mibextid=LQQJ4d"
+                        class="rounded mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-facebook fea icon-sm fea-social">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                            </path>
+                        </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/aladinxpress.official/"
+                                    class="rounded mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-instagram fea icon-sm fea-social">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                    href="https://twitter.com/aladinxpress?s=21&t=WxBeo9ViO7UIYq1cYv8fHg"
+                                    class="rounded mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-twitter fea icon-sm fea-social">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                        </path>
+                                    </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                    href="https://twitter.com/aladinxpress?s=21&t=WxBeo9ViO7UIYq1cYv8fHg"
+                                    class="rounded mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-twitter fea icon-sm fea-social">
+                                        <path fill="currentColor"
+                                            d="m14.792 10.775l-3.668-2.112A1.417 1.417 0 0 0 9 9.89v4.222c-.003.506.267.974.706 1.224a1.41 1.41 0 0 0 1.419.002l3.667-2.112a1.413 1.413 0 0 0 0-2.45zm-.5 1.582l-3.666 2.113a.414.414 0 0 1-.419 0a.408.408 0 0 1-.207-.36V9.89a.408.408 0 0 1 .207-.359a.402.402 0 0 1 .418 0l3.667 2.113a.41.41 0 0 1 0 .714zM19 4H5a3.003 3.003 0 0 0-3 3v10a3.003 3.003 0 0 0 3 3h14a3.003 3.003 0 0 0 3-3V7a3.003 3.003 0 0 0-3-3zm2 13a2.003 2.003 0 0 1-2 2H5a2.003 2.003 0 0 1-2-2V7a2.003 2.003 0 0 1 2-2h14a2.003 2.003 0 0 1 2 2v10z" />
+                                    </svg></a>
+                    </li>
+                </ul>
+
+          
+            </div>
+            <!--end collapse-->
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- END NAVBAR -->
+          
+    </header>
+    <div class="content">
+      <div class="data">
+        <div class="row">
+          <div class="col-4">
+            <div class="divimgqr">
+              <img src="./images/pekkiesdoll.png" alt="" class="img" />
+              <img src="./images/chip qr code.png" alt="" class="imgqr" />
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="infoprofile">
+              <p class="headname">Pekkiesdoll x AladinXpress</p>
+              <br /><br />
+
+              <div class="row">
+                <div class="col-3 text-right">
+                  <p class="p_info">Root Name</p>
+                </div>
+                <div class="col-9">
+                  <p class="p_info">: &nbsp;คุณศรีศุภณัฐ ธดากรณ์ภัทรสิริ</p>
+                </div>
+
+                <div class="w-100"></div>
+                <div class="col-3 text-right">
+                  <p class="p_info">Influencer</p>
+                </div>
+                <div class="col-9">
+                  <p class="p_info">: &nbsp;Pekkiesdoll</p>
+                </div>
+
+                <div class="w-100"></div>
+                <div class="col-3 text-right">
+                  <p class="p_info">Member ID</p>
+                </div>
+                <div class="col-9">
+                  <p class="p_info">: &nbsp;i 0001</p>
+                </div>
+              </div>
+
+              <br /><br />
+              <a href="http://app.aladinxpress.com/register"
+                ><button class="stylebutton">
+                  <h1>สมัครสมาชิก</h1>
+                </button></a
+              >
+              <a href="http://app.aladinxpress.com/login"
+                ><button class="stylebutton ml-3">
+                  <h1>เข้าสู่ระบบ</h1>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img src="./images/imgallmascot.png" alt="" style="float: right; margin-top: -200px; width: 400px;">
+     
+    </div>
+    <footer class="text-white" style=" clear:right; clear: left; padding-left: 32%;"><p class="mb-0">©
+        <script>document.write(new Date().getFullYear())</script> AladinXpress.com by Aladin
+        Express (Thailand) Company Limited.
+    </p></footer>
+    </div>
+
+    <div id="div-mobile">
+      <!-- Navbar -->
+      <div class="w3-top">
+        <div class="w3-bar w3-card w3-large navbarc5">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large"
+            ><img src="./images/logo-light.png" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header
+        class="w3-container w3-center"
+        style="padding: 128px 16px 46px 16px"
+      >
+        <div class="w3-center">
+          <img src="./images/pekkiesdoll.png" alt="" class="imgmobile" />
+        </div>
+        <h1>Pekkiesdoll</h1>
+        <p class="w3-xlarge" style="margin-top: -15px">x</p>
+        <p class="w3-xlarge" style="margin-bottom: 32px">AladinXpress</p>
+       <a href="http://app.aladinxpress.com/register"> <button class="stylebuttonmobile">สมัครสมาชิก</button></a>
+       <a href="http://app.aladinxpress.com/login"> <button class="stylebuttonmobile">เข้าสู่ระบบ</button></a>
+      </header>
+
+      <!-- First Grid -->
+      <div class="w3-row-padding w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+            <div class="" style="margin-top: -25px">
+              <div class="infoprofile">
+                <br />
+                <div class="row">
+                  <div class="col-3 text-right">
+                    <p class="p_info"><b>Root Name</b></p>
+                  </div>
+                  <div class="col-9">
+                    <p class="p_info">: &nbsp;คุณศรีศุภณัฐ ธดากรณ์ภัทรสิริ</p>
+                  </div>
+
+                  <div class="w-100"></div>
+                  <div class="col-3 text-right">
+                    <p class="p_info"><b>Influence</b></p>
+                  </div>
+                  <div class="col-9">
+                    <p class="p_info">: &nbsp;Pekkiesdoll</p>
+                  </div>
+
+                  <div class="w-100"></div>
+                  <div class="col-3 text-right">
+                    <p class="p_info"><b>Member ID</b></p>
+                  </div>
+                  <div class="col-9">
+                    <p class="p_info">: &nbsp;i 0001</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w3-center">
+                <img src="./images/chip qr code.png" alt="" class="imgqr" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="./images/imgallmascot.png" alt="" style="float: right;  width: 250px;">
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-64 w3-center">
+        <div class="w3-xlarge w3-padding-32">
+          <a
+            href="https://www.facebook.com/AladinXpress.official?mibextid=LQQJ4d"
+            class="social_link"
+            ><i class="fa fa-facebook-official"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/aladinxpress.official/"
+            class="social_link"
+            ><i class="fa fa-instagram"></i
+          ></a>
+
+          <a
+            href="https://twitter.com/aladinxpress?s=21&t=WxBeo9ViO7UIYq1cYv8fHg"
+            class="social_link"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://www.youtube.com/@aladinxpress" class="social_link"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </div>
+        <p class="mb-0">
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          AladinXpress.com by Aladin Express (Thailand) Company Limited.
+        </p>
+      </footer>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
